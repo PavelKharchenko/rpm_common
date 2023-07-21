@@ -1,7 +1,7 @@
 
 node(){
  stage("Hello world"){
-   def res = checkout scm
+   def res = checkout 
    echo res 
    cleanWs()
 }

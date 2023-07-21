@@ -1,7 +1,7 @@
 
 node(){
  stage("Hello world"){
-   def res = scm.userRemoteConfigs.credentials[0].id
+   def res = scm.userRemoteConfigs
     echo res 
    cleanWs()
 }

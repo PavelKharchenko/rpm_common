@@ -9,10 +9,7 @@ node(){
  stage("Hello world"){
     res = scm.userRemoteConfigs[0].credentialsId
     echo "id scm cred =" + res.trim()
-    if(PLAYBOOKS == "BUILD"){
-      PLAYBOOKS = PLAYBOOKS.toLowerCase()
-      "${PLAYBOOKS(this)}"
-    }
+     echo "liba = " + library.identifier
    cleanWs()
  }
 }

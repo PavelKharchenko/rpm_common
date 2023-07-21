@@ -1,5 +1,5 @@
 
-library identifier: 'custom-lib@master', retriever: modernSCM(
+library identifier: 'custom-lib@main', retriever: modernSCM(
   [$class: 'GitSCMSource',
    remote: 'git@github.com:PavelKharchenko/rpm_common.git',
    credentialsId: 'test'])

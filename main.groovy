@@ -9,8 +9,8 @@ node(){
  stage("Hello world"){
     res = scm.userRemoteConfigs[0].credentialsId
     echo "id scm cred =" + res.trim()
-    def scenarios = PLAYBOOKS.split(",")
-    scenarios.each{scenario.toLowerCase() ->
+    def scenarios = PLAYBOOKS.toLowerCase().split(",")
+    scenarios.each{scenario ->
       "$scenario"(this)
     }
    cleanWs()

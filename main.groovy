@@ -1,8 +1,8 @@
 
 node(){
  stage("Hello world"){
-   def res = checkout 
-   echo res 
+   def res = scm.credentials[0].id
+    echo res 
    cleanWs()
 }
 }

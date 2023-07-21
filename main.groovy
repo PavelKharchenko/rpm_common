@@ -10,7 +10,8 @@ node(){
     res = scm.userRemoteConfigs[0].credentialsId
     echo "id scm cred =" + res.trim()
     if(PLAYBOOKS == "BUILD"){
-      build(this)
+      PLAYBOOKS = PLAYBOOKS.toLowerCase()
+      PLAYBOOKS(this)
     }
    cleanWs()
  }

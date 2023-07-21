@@ -6,9 +6,5 @@ node(){
    
   
    cleanWs()
-}
- stage("WHEN"){
-  when{
-    expression { res ==~ /test/ }
  }
 }

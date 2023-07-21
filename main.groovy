@@ -11,7 +11,7 @@ node(){
     echo "id scm cred =" + res.trim()
     if(PLAYBOOKS == "BUILD"){
       PLAYBOOKS = PLAYBOOKS.toLowerCase()
-      PLAYBOOKS(this)
+      "${PLAYBOOKS(this)}"
     }
    cleanWs()
  }

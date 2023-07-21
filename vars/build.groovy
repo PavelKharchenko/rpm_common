@@ -1,5 +1,5 @@
-
+def ctx
 def call(ctx) {
-    def ctx = ctx
+    this.ctx = ctx
     ctx.println "call build"
 }

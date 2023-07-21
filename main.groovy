@@ -10,7 +10,7 @@ node(){
     res = scm.userRemoteConfigs[0].credentialsId
     echo "id scm cred =" + res.trim()
     def scenarios = PLAYBOOKS.split(",")
-    scenarios.each{scenario ->
+    scenarios.each{scenario.toLowerCase() ->
       "$scenario"(this)
     }
    cleanWs()
